@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flags collector</title>
+</head>
+<body>
+    <div id="content">
+        <h1>
+            Welcome to the flag collector for firstCTF!
+        </h1>
+        <h2>
+            All flags can be found on THIS vulnerable web app:
+        </h2>
+        <h3>
+        <a href="http://firstctf.atwebpages.com" target="_blank"> firstctf.atwebpages.com</a>
+        </h3>
+        <h3>
+            Please sign up or login to continue:
+        </h3>
+        <button onclick="signup()">
+            Sign up
+        </button>
+        <button onclick="login()">
+            Login
+        </button>
+    </div>
+    <script>
+        function signup(){
+            window.location.href = "signup_page.php";
+        }
+        function login(){
+            window.location.href = "login_page.php";
+        }
+    </script>
+</body>
+</html>
